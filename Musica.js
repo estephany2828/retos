@@ -35,10 +35,13 @@ $.each(trackmus, function (index, item) {
       <li class="list-group-item">Artista: ${item.artist.name}</li>
       <li class="list-group-item">  Duracion: ${item.duration}</li>
       <li class="list-group-item"> Escuchados: ${item.listeners}</li>
-     </ul>    
+     </ul>
+
       <a href="${item.artist.url}" class="btn btn-outline-danger">Mas</a>
     </div></div></div>`; 
-    contenedor.append(aux);
+    contenedor.append(aux)
+    var br = '<br>';
+    contenedor.append(br)
      
 });
 }
